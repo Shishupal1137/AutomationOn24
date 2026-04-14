@@ -19,8 +19,6 @@ public class Test1 {
         System.out.println("Title: " + driver.getTitle());
         
         System.out.println("PR demo working");
-        
-        System.out.println("WRONG CODE");
 
         driver.quit();
     }
