@@ -21,12 +21,12 @@ public class Test1 {
         System.out.println("PR demo working");
         
         
-<<<<<<< HEAD
+
         System.out.println("Main branch change");
-=======
+
         System.out.println("Feature branch change");
         
->>>>>>> feature/conflict-practice
+
 
         driver.quit();
     }
