@@ -3,13 +3,13 @@
 <suite name="Failed suite [My Suite]">
   <test thread-count="5" name="My Tests(failed)">
     <classes>
-      <class name="com.test.seleniumproject.Test1">
+      <class name="com.test.seleniumproject.Test3">
         <methods>
+          <include name="setup"/>
           <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="searchGoogleAndValidateTitle"/>
+          <include name="launchFlipkart"/>
         </methods>
-      </class> <!-- com.test.seleniumproject.Test1 -->
+      </class> <!-- com.test.seleniumproject.Test3 -->
     </classes>
   </test> <!-- My Tests(failed) -->
 </suite> <!-- Failed suite [My Suite] -->

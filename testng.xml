@@ -3,6 +3,7 @@
         <classes>
             <class name="com.test.seleniumproject.Test1"/>
             <class name="com.test.seleniumproject.Test2"/>
+             <class name="com.test.seleniumproject.Test3"/>
         </classes>
     </test>
 </suite>
