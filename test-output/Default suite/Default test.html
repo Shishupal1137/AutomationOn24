@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Apr 15 15:57:28 IST 2026</td>
+<td>Started on:</td><td>Wed Apr 15 18:39:01 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>15 seconds (15188 ms)</td>
+<tr><td>Total time:</td><td>17 seconds (17341 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,34 +77,17 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.test.seleniumproject.Test1.searchGoogleAndValidateTitle()'><b>searchGoogleAndValidateTitle</b><br>Test class: com.test.seleniumproject.Test1</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: target frame detached
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=147.0.7727.56)
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain &quot;Selenium WebDriver&quot;. Current title: &quot;https://www.google.com/search?q=Selenium+WebDriver&amp;sca_esv=b23efcb65468375a&amp;source=hp&amp;ei=8o3faayHE72Mvr0PnZOD4Ag&amp;iflsig=AFdpzrgAAAAAad-cAuXAxPNxKTBLLAY38XH_nBRVyItD&amp;ved=0ahUKEwisyLrd9u-TAxU9hq8BHZ3JAIwQ4dUDCBo&amp;uact=5&amp;oq=Selenium+WebDriver&amp;gs_lp=Egdnd3Mtd2l6IhJTZWxlbml1bSBXZWJEcml2ZXJIXVAAWFpwAHgAkAEAmAEAoAEAqgEAuAEDyAEA-AEBmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&amp;sclient=gws-wiz&amp;sei=843fafzAOvba4-EPuqKWwAY&quot; (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7e3191be092b07f952f4d23094913fbb, getTitle {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64855}, goog:processID: 4356, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64855/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7e3191be092b07f952f4d23094913fbb
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:305)
-	at org.openqa.selenium.support.ui.ExpectedConditions$2.apply(ExpectedConditions.java:78)
-	at org.openqa.selenium.support.ui.ExpectedConditions$2.apply(ExpectedConditions.java:73)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50056}, goog:processID: 18776, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50056/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d0d08eddafc1711824691d5af0d59ba
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at com.test.seleniumproject.utils.WaitUtils.waitForTitleContains(WaitUtils.java:26)
 	at com.test.seleniumproject.pages.GoogleHomePage.isTitleUpdated(GoogleHomePage.java:36)
-	at com.test.seleniumproject.Test1.searchGoogleAndValidateTitle(Test1.java:21)
+	at com.test.seleniumproject.Test1.searchGoogleAndValidateTitle(Test1.java:23)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -131,35 +114,18 @@ Session ID: 7e3191be092b07f952f4d23094913fbb
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace103394942", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace103394942'><pre>org.openqa.selenium.WebDriverException: target frame detached
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=147.0.7727.56)
+</pre></div><a href='#' onClick='toggleBox("stack-trace680150616", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace680150616'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain &quot;Selenium WebDriver&quot;. Current title: &quot;https://www.google.com/search?q=Selenium+WebDriver&amp;sca_esv=b23efcb65468375a&amp;source=hp&amp;ei=8o3faayHE72Mvr0PnZOD4Ag&amp;iflsig=AFdpzrgAAAAAad-cAuXAxPNxKTBLLAY38XH_nBRVyItD&amp;ved=0ahUKEwisyLrd9u-TAxU9hq8BHZ3JAIwQ4dUDCBo&amp;uact=5&amp;oq=Selenium+WebDriver&amp;gs_lp=Egdnd3Mtd2l6IhJTZWxlbml1bSBXZWJEcml2ZXJIXVAAWFpwAHgAkAEAmAEAoAEAqgEAuAEDyAEA-AEBmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&amp;sclient=gws-wiz&amp;sei=843fafzAOvba4-EPuqKWwAY&quot; (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7e3191be092b07f952f4d23094913fbb, getTitle {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64855}, goog:processID: 4356, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64855/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7e3191be092b07f952f4d23094913fbb
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:305)
-	at org.openqa.selenium.support.ui.ExpectedConditions$2.apply(ExpectedConditions.java:78)
-	at org.openqa.selenium.support.ui.ExpectedConditions$2.apply(ExpectedConditions.java:73)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50056}, goog:processID: 18776, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50056/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d0d08eddafc1711824691d5af0d59ba
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at com.test.seleniumproject.utils.WaitUtils.waitForTitleContains(WaitUtils.java:26)
 	at com.test.seleniumproject.pages.GoogleHomePage.isTitleUpdated(GoogleHomePage.java:36)
-	at com.test.seleniumproject.Test1.searchGoogleAndValidateTitle(Test1.java:21)
+	at com.test.seleniumproject.Test1.searchGoogleAndValidateTitle(Test1.java:23)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -187,7 +153,7 @@ Session ID: 7e3191be092b07f952f4d23094913fbb
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>7</td>
+<td>12</td>
 <td>com.test.seleniumproject.Test1@408d971b</td></tr>
 </table><p>
 </body>

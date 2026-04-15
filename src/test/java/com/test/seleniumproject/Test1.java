@@ -20,8 +20,8 @@ public class Test1 extends BaseTest {
                 .open(ConfigReader.get("base.url", "https://www.google.com"))
                 .searchFor("Selenium WebDriver");
 
-     // Assert.assertTrue(googleHomePage.isTitleUpdated("Selenium WebDriver"),
-       //         "Expected page title to contain the search keyword.");
+      Assert.assertTrue(googleHomePage.isTitleUpdated("Selenium WebDriver"),
+               "Expected page title to contain the search keyword.");
     }
 }
     
