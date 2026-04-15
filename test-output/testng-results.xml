@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-15T15:37:00 IST" name="Default suite" finished-at="2026-04-15T15:37:04 IST" duration-ms="4406">
+  <suite started-at="2026-04-15T16:03:57 IST" name="My Suite" finished-at="2026-04-15T16:04:04 IST" duration-ms="7710">
     <groups>
     </groups>
-    <test started-at="2026-04-15T15:37:00 IST" name="Default test" finished-at="2026-04-15T15:37:04 IST" duration-ms="4406">
+    <test started-at="2026-04-15T16:03:57 IST" name="My Tests" finished-at="2026-04-15T16:04:04 IST" duration-ms="7710">
       <class name="com.test.seleniumproject.Test1">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.seleniumproject.Test1@408d971b]" started-at="2026-04-15T15:37:00 IST" name="setUp" finished-at="2026-04-15T15:37:04 IST" duration-ms="3825" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.seleniumproject.Test1@2d3379b4]" started-at="2026-04-15T16:03:57 IST" name="setUp" finished-at="2026-04-15T16:04:00 IST" duration-ms="3746" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchGoogleAndValidateTitle()[pri:0, instance:com.test.seleniumproject.Test1@408d971b]" started-at="2026-04-15T15:37:04 IST" name="searchGoogleAndValidateTitle" finished-at="2026-04-15T15:37:04 IST" duration-ms="40" status="PASS">
+        <test-method signature="searchGoogleAndValidateTitle()[pri:0, instance:com.test.seleniumproject.Test1@2d3379b4]" started-at="2026-04-15T16:04:00 IST" name="searchGoogleAndValidateTitle" finished-at="2026-04-15T16:04:03 IST" duration-ms="3098" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchGoogleAndValidateTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.seleniumproject.Test1@408d971b]" started-at="2026-04-15T15:37:04 IST" name="tearDown" finished-at="2026-04-15T15:37:04 IST" duration-ms="440" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.seleniumproject.Test1@2d3379b4]" started-at="2026-04-15T16:04:03 IST" name="tearDown" finished-at="2026-04-15T16:04:04 IST" duration-ms="769" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.test.seleniumproject.Test1 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- My Tests -->
+  </suite> <!-- My Suite -->
 </testng-results>
