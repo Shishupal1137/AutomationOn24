@@ -1,34 +1,26 @@
 package com.test.seleniumproject;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Test1 {
+import com.test.seleniumproject.base.BaseTest;
+import com.test.seleniumproject.config.ConfigReader;
+import com.test.seleniumproject.pages.GoogleHomePage;
+
+public class Test1 extends BaseTest {
 
     @Test
-    public void openGoogle() {
+    public void searchGoogleAndValidateTitle() {
+        GoogleHomePage googleHomePage = new GoogleHomePage(getDriver());
 
-        WebDriverManager.chromedriver().setup();
+    	System.out.println("This is for Jenkins run");
+      /*  googleHomePage
+                .open(ConfigReader.get("base.url", "https://www.google.com"))
+                .searchFor("Selenium WebDriver");
 
-        WebDriver driver = new ChromeDriver();
-
-        driver.get("https://www.google.com");
-
-        System.out.println("Title: " + driver.getTitle());
-        
-        System.out.println("PR demo working");
-        
-        
-
-        System.out.println("Main branch change");
-
-        System.out.println("Feature branch change");
-        
-
-
-        driver.quit();
-    }
+      Assert.assertTrue(googleHomePage.isTitleUpdated("Selenium WebDriver"),
+                "Expected page title to contain the search keyword.");
+    }*/
 }
-//i take pull of that code
+    
+}
