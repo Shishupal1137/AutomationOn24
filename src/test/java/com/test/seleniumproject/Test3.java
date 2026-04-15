@@ -21,7 +21,7 @@ public class Test3 {
     @Test
     public void launchFlipkart() {
         // The actual test logic
-        driver.get("https://www.flipkart.com");
+        driver.get("https://www.rflipkart.com");
         
         String title = driver.getTitle();
         System.out.println("Page Title: " + title);
