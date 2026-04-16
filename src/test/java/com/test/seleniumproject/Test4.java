@@ -1,47 +1,74 @@
-
 package com.test.seleniumproject;
+
 import org.openqa.selenium.By;
-
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
 import org.testng.Reporter;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.ITestResult;
+
+import java.io.File;
+import java.io.IOException;
+import org.apache.commons.io.FileUtils;
 
 public class Test4 {
 
-    @Test
-    public void launchBrowserAndTest() {
+    WebDriver driver;
 
+    @BeforeMethod
+    public void setup() {
         Reporter.log("Test started", true);
 
-        // Launch browser
-        WebDriver driver = new ChromeDriver();
-        Reporter.log("Browser launched successfully", true);
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
 
-        // Open URL
-        driver.get("https://www.google.com");
-        Reporter.log("Navigated to Google", true);
+        driver = new ChromeDriver(options);
+        Reporter.log("Browser launched", true);
 
-        // Maximize window
         driver.manage().window().maximize();
-        Reporter.log("Browser maximized", true);
+    }
 
-        // Perform operation - search something
+    @Test
+    public void launchBrowserAndTest() {
+        driver.get("https://www.google.com");
+        Reporter.log("Opened Google", true);
+
         driver.findElement(By.name("q")).sendKeys("Selenium TestNG");
-        Reporter.log("Entered text in search box", true);
+        Reporter.log("Search performed", true);
 
-        // Small wait (not best practice, but ok for demo)
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        // Intentionally fail (for testing screenshot)
+        // remove this later
+        if (true) {
+            throw new RuntimeException("Force failure for screenshot");
+        }
+    }
+
+    @AfterMethod
+    public void tearDown(ITestResult result) throws IOException {
+
+        if (result.getStatus() == ITestResult.FAILURE) {
+            takeScreenshot(result.getName());
+            Reporter.log("Screenshot captured for failure", true);
         }
 
-        // Close browser
-        driver.quit();
-        Reporter.log("Browser closed", true);
+        if (driver != null) {
+            driver.quit();
+            Reporter.log("Browser closed", true);
+        }
+    }
 
-        Reporter.log("Test completed", true);
+    public void takeScreenshot(String testName) throws IOException {
+        File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+
+        File dest = new File("screenshots/" + testName + ".png");
+        dest.getParentFile().mkdirs(); // create folder if not exists
+
+        FileUtils.copyFile(src, dest);
     }
 }

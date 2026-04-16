@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.seleniumproject.Test3">
+      <class name="com.test.seleniumproject.Test4">
         <methods>
+          <include name="launchBrowserAndTest"/>
+          <include name="tearDown"/>
           <include name="setup"/>
-          <include name="launchFlipkart"/>
         </methods>
-      </class> <!-- com.test.seleniumproject.Test3 -->
+      </class> <!-- com.test.seleniumproject.Test4 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
