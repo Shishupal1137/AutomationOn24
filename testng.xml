@@ -1,9 +1,9 @@
 <suite name="My Suite">
     <test name="My Tests">
         <classes>
-            <class name="com.test.seleniumproject.Test1"/>
-            <class name="com.test.seleniumproject.Test2"/>
-             <class name="com.test.seleniumproject.Test3"/>
+            //<class name="com.test.seleniumproject.Test1"/>
+           // <class name="com.test.seleniumproject.Test2"/>
+             <class name="com.test.seleniumproject.Test4"/>
         </classes>
     </test>
 </suite>
