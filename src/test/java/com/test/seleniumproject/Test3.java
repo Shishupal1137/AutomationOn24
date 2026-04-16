@@ -2,6 +2,7 @@ package com.test.seleniumproject;
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -21,10 +22,13 @@ public class Test3 {
     @Test
     public void launchFlipkart() {
         // The actual test logic
-        driver.get("https://www.rflipkart.com");
+        driver.get("https://www.flipkart.com");
         
         String title = driver.getTitle();
         System.out.println("Page Title: " + title);
+        Reporter.log("Test started");
+        Reporter.log("Test Ended");
+     
         
         // Basic TestNG validation
         assert title.contains("Online Shopping");

@@ -1,100 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-15T22:01:00 IST" name="My Suite" finished-at="2026-04-15T22:01:12 IST" duration-ms="11883">
+  <suite started-at="2026-04-16T11:16:37 IST" name="Default suite" finished-at="2026-04-16T11:16:48 IST" duration-ms="10546">
     <groups>
     </groups>
-    <test started-at="2026-04-15T22:01:00 IST" name="My Tests" finished-at="2026-04-15T22:01:12 IST" duration-ms="11883">
+    <test started-at="2026-04-16T11:16:37 IST" name="Default test" finished-at="2026-04-16T11:16:48 IST" duration-ms="10546">
       <class name="com.test.seleniumproject.Test1">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.seleniumproject.Test1@6771beb3]" started-at="2026-04-15T22:01:00 IST" name="setUp" finished-at="2026-04-15T22:01:05 IST" duration-ms="5018" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.seleniumproject.Test1@408d971b]" started-at="2026-04-16T11:16:37 IST" name="setUp" finished-at="2026-04-16T11:16:42 IST" duration-ms="4341" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchGoogleAndValidateTitle()[pri:0, instance:com.test.seleniumproject.Test1@6771beb3]" started-at="2026-04-15T22:01:05 IST" name="searchGoogleAndValidateTitle" finished-at="2026-04-15T22:01:07 IST" duration-ms="2654" status="PASS">
+        <test-method signature="searchGoogleAndValidateTitle()[pri:0, instance:com.test.seleniumproject.Test1@408d971b]" started-at="2026-04-16T11:16:42 IST" name="searchGoogleAndValidateTitle" finished-at="2026-04-16T11:16:47 IST" duration-ms="5814" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchGoogleAndValidateTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.seleniumproject.Test1@6771beb3]" started-at="2026-04-15T22:01:07 IST" name="tearDown" finished-at="2026-04-15T22:01:08 IST" duration-ms="896" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.seleniumproject.Test1@408d971b]" started-at="2026-04-16T11:16:47 IST" name="tearDown" finished-at="2026-04-16T11:16:48 IST" duration-ms="321" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.test.seleniumproject.Test1 -->
-      <class name="com.test.seleniumproject.Test3">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.seleniumproject.Test3@5bda8e08]" started-at="2026-04-15T22:01:08 IST" name="setup" finished-at="2026-04-15T22:01:10 IST" duration-ms="1946" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="launchFlipkart()[pri:0, instance:com.test.seleniumproject.Test3@5bda8e08]" started-at="2026-04-15T22:01:10 IST" name="launchFlipkart" finished-at="2026-04-15T22:01:11 IST" duration-ms="764" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
-  (Session info: chrome=147.0.7727.56)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [85a3e06e9fc066bdb9656ec417cbb32b, get {url=https://www.rflipkart.com}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63837}, goog:processID: 24032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63837/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 85a3e06e9fc066bdb9656ec417cbb32b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
-  (Session info: chrome=147.0.7727.56)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [85a3e06e9fc066bdb9656ec417cbb32b, get {url=https://www.rflipkart.com}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63837}, goog:processID: 24032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63837/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 85a3e06e9fc066bdb9656ec417cbb32b
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-at com.test.seleniumproject.Test3.launchFlipkart(Test3.java:24)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchFlipkart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.seleniumproject.Test3@5bda8e08]" started-at="2026-04-15T22:01:11 IST" name="tearDown" finished-at="2026-04-15T22:01:12 IST" duration-ms="477" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.test.seleniumproject.Test3 -->
-    </test> <!-- My Tests -->
-  </suite> <!-- My Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
