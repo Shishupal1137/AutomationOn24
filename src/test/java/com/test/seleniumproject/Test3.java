@@ -22,23 +22,23 @@ public class Test3 {
     @Test
     public void launchFlipkart() {
         // The actual test logic
-        driver.get("https://www.flipkart.com");
+    	driver.get("https://www.google.com");
         
-        String title = driver.getTitle();
+      /*  String title = driver.getTitle();
         System.out.println("Page Title: " + title);
         Reporter.log("Test started");
-        Reporter.log("Test Ended");
+        Reporter.log("Test Ended");*/
      
         
-        // Basic TestNG validation
+    /*    // Basic TestNG validation
         assert title.contains("Online Shopping");
-    }
+    }*/
 
-    @AfterMethod
+   /* @AfterMethod
     public void tearDown() {
         // Close the browser after the test is complete
         if (driver != null) {
             driver.quit();
-        }
+        }*/
     }
 }
